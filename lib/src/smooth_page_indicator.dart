@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:preload_page_view/preload_page_view.dart';
 
 import 'effects/indicator_effect.dart';
 import 'effects/worm_effect.dart';
@@ -10,7 +11,7 @@ typedef OnDotClicked = void Function(int index);
 
 class SmoothPageIndicator extends AnimatedWidget {
   // Page view controller
-  final PageController controller;
+  final PreloadPageController controller;
 
   /// Holds effect configuration to be used in the [BasicIndicatorPainter]
   final IndicatorEffect effect;
